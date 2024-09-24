@@ -40,7 +40,7 @@ const resolvers = {
   Query: {
     greeting: () => "Hello GraphQL world!👋",
     hello: () => "Hello world!",
-    library: () => ({ books: () => books.filter((x) => x.year > 1900) }),
+    library: () => ({ books: books }),
   },
 };
 
